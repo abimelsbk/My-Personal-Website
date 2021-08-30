@@ -83,6 +83,7 @@ nav .fa{
     padding: 10px 10px;
     color: #0dcaf0;
     font-weight: bold;
+    width: min-content;
        
 }
 
