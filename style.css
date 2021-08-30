@@ -75,15 +75,15 @@ nav .fa{
     
 }
 .pr-btn{
-    margin-left: 160px;
-    margin-top: 140px;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     border: none;
     font-size: 25px;
     padding: 10px 10px;
     color: #0dcaf0;
     font-weight: bold;
-    width: min-content;
+    width: 200px;
+    align-items: center;
        
 }
 
