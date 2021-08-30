@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,11 @@
   <title>ASBK</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="icon" href="images/profile.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/1c418d3685.js"></script>
 </head>
 <body>
-  <header>
+  <header class="" style="position: fixed; width: 100%; z-index: 5;">
     <div class="row bg-info text-white">
       <div class="col-md-6 col-9">
         <h1 class="p-4 ps-5">
@@ -17,53 +19,42 @@
         </h1>
       </div>
       <div class="col-md-6 col-3 my-auto">
-
-        <nav class="navbar navbar-expand-lg navbar-light">
-         
-          <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link text-white p-4 h5 href="#">Home <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white p-4 h5" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white p-4 h5" href="#">Recent works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white p-4 h5" href="#">Contact me</a>
-              </li>
+        <nav>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#SERVICES">SERVICES</a></li>
+                <li><a href="#RECENT">RECENT WORKS</a></li>
+                <li><a href="#CONTACT">CONTACT ME</a></li>
             </ul>
-          </div>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>  
         </nav>
-
-
       </div>
     </div>
 
   </header>
-  <section class="">
+  <section  id="HOME" class="" style="padding-top: 7em;">
     <div class="container p-4">
       <div class="row align-items-center">
         <div class="col-md-6 col-12">
-         <img src="images/profile.jpg" alt="" class="img-fluid rounded-circle">
+         <img src="images/profile2.jpg" alt="" class="img-fluid rounded-circle">
 
         </div>
         <div class="col-md-6 col-12 ">
           <h2 class="pt-5 text-center display-4">Abimel S B kulumala</h2>
           <h3 class="pt-4 mx-auto text-center">Freelance Grapghic Designer <br> and Web Designer <br> Based on Kerala</h3>
+          <p class="mx-auto mt-3 text-center h6"> <i> "Good departs for the arrival of the Best" </i></p>
+          <p class="mx-auto mt-3 text-center h6">- ASBK</p>
+
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-light pb-5">
+  <section  class="bg-light pb-5" id="SERVICES" >
    <div class="container">
-     <h1 class="text-center display-3 " >Services</h1>
+     <h1 class="text-center display-3 mt-3" >Services</h1>
      <h4 class="text-center pt-5" >Graphic Designing</h4>
      <div class="row pt-4 ">
        <div class="col-md-4 text-center">
@@ -147,14 +138,101 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
      </div>
    </div>
   </section>
-  <section>
+  <section id="RECENT" class="bg-white">
     <div class="container">
+      <h1 class="text-center display-3 mb-4 mt-4 " >Recent Works</h1>
       <div class="row pt-4">
-        <iframe class="col-md-6 col-12" src="https://docs.google.com/presentation/d/e/2PACX-1vTqrIa2fCXYi4dvTx6oHGRJ3cc3RPZca_wKVS3pGTl0moViUoyGPiHiR_6_h5MZsQzzR7y0v5pSntro/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="col-md-12 col-12 mx-auto">
+        <iframe class="mx-auto mb-4 col-12" src="https://docs.google.com/presentation/d/e/2PACX-1vTqrIa2fCXYi4dvTx6oHGRJ3cc3RPZca_wKVS3pGTl0moViUoyGPiHiR_6_h5MZsQzzR7y0v5pSntro/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+      <div class="mx-auto row col-12">
+       <div  class="project1 col-md-6 bg-info mx-auto mb-3 "  style="height: 22em; width: 32em;" >
+       <a href=""><button class="pr-btn">Project 1</button></a>
+       </div>
+       <div  class="project2 col-md-6 bg-info mb-3 mx-auto " style="height: 22em; width: 32em;  " >
+        <a class="a-btn" href=""></a><button class="pr-btn">Project 2</button></a>
+       </div>
+       <h2 class="text-center mt-5" >More Projects are coming soon...</h2>
+       <h3>Bookmark my site for </h3>
+      </div>
       </div>
     </div>
   </section>
-  
+  <section id="CONTACT" class="bg-light mx-4">
+    <div class=" mx auto container">
+      <h1 class="text-center display-3 mt-3 mb-4 p-4 " >Contact Me</h1>
+      <div class="row col-md-12">
+        
+        <div class=" my-auto col-md-3 text-center">
+          <ul class=" list-unstyled mb-0">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 226 226"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><path d="M111.87,114.13v-2.26h2.26v2.26z" fill="#cccccc"></path><g fill="#0dcaf0"><path d="M149.16,29.78786c-15.90475,0 -28.928,13.74362 -28.928,30.38288c0,16.62512 28.928,56.40112 28.928,56.40112c0,0 28.928,-39.776 28.928,-56.40112c0,-16.63925 -13.02325,-30.38288 -28.928,-30.38288zM109.384,44.61911c-10.12762,2.52837 -18.80038,16.272 -23.85712,35.79275h23.85712zM94.19962,46.78024c-19.16762,5.05675 -35.43962,16.99238 -45.92037,33.63162h29.64837c3.616,-14.464 9.40725,-26.03238 16.272,-33.63162zM149.16,47.86786c6.14438,0 10.848,4.70362 10.848,10.848c0,6.14438 -4.70362,10.848 -10.848,10.848c-6.14438,0 -10.848,-4.70362 -10.848,-10.848c0,-6.14438 4.70362,-10.848 10.848,-10.848zM44.66325,87.64386c-4.3505,8.67275 -6.87888,18.44725 -7.232,28.928h36.14587c0,-10.12762 1.10175,-19.888 2.5425,-28.928zM83.71888,87.64386c-1.808,9.04 -2.89562,18.80038 -3.26288,28.928h28.928v-28.928zM116.616,87.64386v28.928h23.504c-4.33638,-6.51162 -11.93562,-17.35962 -18.08,-28.928zM175.92688,87.64386c-6.1585,11.56838 -13.3905,22.41638 -18.08,28.928h30.736c-0.36725,-10.48075 -2.89562,-20.25525 -7.232,-28.928zM37.064,123.80386c0.36725,10.48075 2.89562,20.25525 7.232,28.928h31.82362c-1.44075,-9.04 -2.52837,-18.80038 -2.89562,-28.928zM80.456,123.80386c0.36725,10.12762 1.45488,19.888 3.26288,28.928h25.66512v-28.928zM116.616,123.80386v28.928h25.66512c1.808,-9.04 2.89563,-18.80038 3.26288,-28.928zM152.776,123.80386c-0.36725,10.12762 -1.08762,19.888 -2.89562,28.928h31.82362c4.33638,-8.67275 6.86475,-18.44725 7.232,-28.928zM48.27925,159.96386c10.1135,16.63925 26.3855,28.57488 45.55312,33.63162c-6.86475,-7.59925 -12.656,-19.16762 -16.272,-33.63162zM85.52688,159.96386c5.05675,19.16762 13.7295,32.91125 23.85712,35.80688v-35.80688zM116.616,159.96386v35.80688c10.12762,-2.5425 18.80038,-16.28612 23.85712,-35.80688zM147.70512,159.96386c-3.24875,14.464 -9.04,26.03238 -15.90475,33.63162c19.16762,-5.05675 35.43962,-17.35962 45.56725,-33.63162z"></path></g></g></svg>
+                  <p class="h5 mb-4">Trivandrum, Kerala, India</p>
+              </li>
+
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="40" height="40"
+viewBox="0 0 226 226"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#0dcaf0"><path d="M63.28,18.03586c-24.91123,0 -45.2,20.28877 -45.2,45.2v99.44c0,24.91123 20.28877,45.2 45.2,45.2h99.44c24.91123,0 45.2,-20.28877 45.2,-45.2v-99.44c0,-24.91123 -20.28877,-45.2 -45.2,-45.2zM81.38648,54.39008c2.83856,0.12204 5.4454,1.72134 7.01836,4.1757c1.78992,2.79336 4.56767,7.1286 8.18367,12.78312c3.2996,5.15732 3.5297,11.81839 0.58266,17.19719l-6.62109,9.41961c-1.78992,2.54928 -2.14693,5.81216 -0.94461,8.68688c1.87128,4.4748 5.49893,11.35198 11.94445,17.7975c6.44552,6.44552 13.3227,10.07317 17.7975,11.94445c2.87472,1.20232 6.1376,0.84531 8.68688,-0.94461l9.41961,-6.62109c5.3788,-2.94704 12.03987,-2.71242 17.19719,0.58266c5.65452,3.616 9.98976,6.39375 12.78312,8.18367c2.45436,1.57296 4.05366,4.1798 4.1757,7.01836c0.69608,16.10928 -11.78435,22.63531 -15.41391,22.63531c-2.51312,0 -32.72614,3.43386 -66.80242,-30.64242c-34.07628,-34.07628 -30.64242,-64.2893 -30.64242,-66.80242c0,-3.62956 6.52603,-16.10999 22.63531,-15.41391z"></path></g></g></svg>
+                  <p class="h5 mb-4">+91 9744770779</p>
+              </li>
+
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="40" height="40"
+viewBox="0 0 226 226"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#0dcaf0"><path d="M37.66667,37.66667c-6.2715,0 -11.80129,3.07999 -15.21012,7.81657c-2.29767,3.18283 -1.28258,7.69445 2.0415,9.76611l82.6901,51.53418c3.5595,2.22233 8.0642,2.22233 11.62371,0l82.34065,-51.97559c3.45592,-2.18467 4.31754,-6.93273 1.76563,-10.11556c-3.43708,-4.27517 -8.68055,-7.02572 -14.5848,-7.02572zM202.60547,76.14258c-0.78747,0.00868 -1.58715,0.22571 -2.33578,0.69889l-81.45784,51.36865c-3.55951,2.21292 -8.06421,2.20394 -11.62371,-0.01839l-81.47623,-50.76172c-2.9945,-1.8645 -6.87858,0.29427 -6.87858,3.82552v88.24447c0,10.40542 8.42792,18.83333 18.83333,18.83333h150.66667c10.40542,0 18.83333,-8.42792 18.83333,-18.83333v-88.8514c0,-2.6555 -2.19879,-4.53206 -4.5612,-4.50602z"></path></g></g></svg>
+                  <p class="h5 mb-4">abimelsbkulumala@gmail.com</p>
+              </li>
+          </ul>
+      </div>
+      <div class=" mx-auto col-md-6 contact-col">
+        <h6 class="mb-5 text-center">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</h6>
+
+        <form method="POST" action="https://formsubmit.co/abimelsbkulumala@gmail.com"  method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <input name="name" type="text" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter Email Address" required>
+          <input type="text" name="subject" placeholder="Enter subject" required>
+          <textarea rows="5" name="Message" placeholder="Message"></textarea>
+          <button type="submit" class="bg-info bg-btn text-white mb-5 " id="#thanks" >Send Message</button>
+
+        </form>
+      </div>
+      
+      </div>
+
+    </div>
+  </section>
+   <footer class="bg-info  col-12">
+     <div  class="row">
+       <h5 class="text-center text-white mt-3 ">About Me</h5>
+       <p class="text-center px-5 text-black ">I am Abimel from Trivandrum, Kerala, India. You can contact me for  designing static web pages, Dynamic Blogs, E-commerce websites, <br> Minimalistic brand logos, Business cards, Posters and Brochures</p>
+       <p class="text-white text-center mt-3 h5">Copyright © 2021 belongs to ASBK</p>
+       <p class="text-center text-white mb-1 mt-3">Designed and Developed by ASBK</p>
+
+     </div>
+   </footer>
+  </script>
+  <script>
+
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+          navLinks.style.right = "0";
+      }
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+      }
+  </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
