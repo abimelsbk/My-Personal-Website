@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;
